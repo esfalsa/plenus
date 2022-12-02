@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"removeComments": true,
+		"declaration": true,
+		"outDir": "dist",
+
+		/* Strict Type-Checking Options */
+		"strict": true,
+		"esModuleInterop": true,
+
+		/* Advanced Options */
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src/**/*.ts"]
+}

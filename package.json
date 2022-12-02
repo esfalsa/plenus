@@ -1,0 +1,40 @@
+{
+	"name": "plenus",
+	"version": "0.0.1",
+	"description": "A NationStates autologin tool.",
+	"keywords": [
+		"nationstates",
+		"autologin"
+	],
+	"homepage": "https://github.com/esfalsa/plenus#readme",
+	"bugs": "https://github.com/esfalsa/applesauce/issues",
+	"license": "AGPL-3.0-or-later",
+	"author": "Pronoun",
+	"type": "module",
+	"main": "dist/index.js",
+	"bin": "dist/bin/plenus.js",
+	"repository": "github:esfalsa/plenus",
+	"scripts": {
+		"build": "tsc --build --clean && tsc",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.3.0",
+		"@commitlint/config-conventional": "^17.3.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.0.4",
+		"prettier": "^2.8.0",
+		"typescript": "^4.9.3"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"lint-staged": {
+		"*.js": "eslint --cache --fix",
+		"*.{js,css,md}": "prettier --write"
+	}
+}
